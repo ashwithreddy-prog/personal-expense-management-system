@@ -1,0 +1,144 @@
+body{
+
+font-family:Arial;
+background:#eeb0e0;
+text-align:center;
+margin:0;
+
+}
+
+.container{
+
+width:80%;
+margin:auto;
+background:rgb(201, 250, 250);
+padding:20px;
+margin-top:30px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+
+}
+
+.inputs input,select{
+
+padding:10px;
+margin:5px;
+
+}
+
+button{
+
+padding:10px 15px;
+background:#3498db;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#2980b9;
+
+}
+
+table{
+
+width:100%;
+margin-top:20px;
+border-collapse:collapse;
+
+}
+
+th,td{
+
+border:1px solid #ccc;
+padding:10px;
+
+}
+
+
+/* Graph layout */
+
+.graph-container{
+
+display:flex;
+justify-content:space-between;
+margin-top:30px;
+
+}
+
+.graph-box{
+
+width:48%;
+background:#fafafa;
+padding:15px;
+border-radius:10px;
+box-shadow:0 0 5px rgba(0,0,0,0.1);
+
+}
+
+canvas{
+
+max-height:300px;
+
+}
+
+
+/* Opening Animation */
+
+#openAnimation{
+
+position:fixed;
+width:100%;
+height:100%;
+background:#1abc9c;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:1000;
+
+}
+
+.circle{
+
+width:120px;
+height:120px;
+border-radius:50%;
+background:white;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:60px;
+animation:zoom 2s forwards;
+
+}
+
+@keyframes zoom{
+
+0%{transform:scale(0)}
+100%{transform:scale(1)}
+
+}
+
+
+/* Coin animation */
+
+.coin{
+
+position:fixed;
+top:-50px;
+font-size:30px;
+animation:fall 3s linear forwards;
+
+}
+
+@keyframes fall{
+
+to{
+transform:translateY(100vh);
+opacity:0;
+}
+
+}
